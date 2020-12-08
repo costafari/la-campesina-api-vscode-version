@@ -12,5 +12,5 @@ public interface ILoteDao extends JpaRepository<Lote, Long> {
 
 	@Query("from Lote l where l.proveedor = ?1")
 	public List<Lote> findByProveedor(Proveedor p);
-	
+
 }
